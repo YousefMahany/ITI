@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+</head>
+<body>
+  <!-- <h2>To-Do List</h2> -->
+<!--   First Project
+  <input type="text" id="itemInput" placeholder="Enter Your ToDay Task...">
+  <br>
+  <button onclick="addItem()">Add</button>
+  <button onclick="resetList()">Reset</button>
+
+  <ul id="itemList"></ul>
+
+  <script>
+    function addItem() {
+      let input = document.getElementById("itemInput");
+      let text = input.value.trim();
+
+      if (text !== "") {
+        let li = document.createElement("li");
+        li.textContent = text;
+        document.getElementById("itemList").appendChild(li);
+        input.value = "";
+      }
+    }
+      function resetList() {
+      document.getElementById("itemList").innerHTML = "";
+      document.getElementById("itemInput").value = "";
+    }
+  </script> -->
+
+  <!-- ------------------------- Second Project------------------------------- -->
+   <!-- <h2>Click To Change Color </h2>
+  <button onclick="changeColor()">Change Color</button>
+
+  <script>
+    function changeColor() {
+      let colors = ["red", "blue", "green", "yellow", "pink"];
+      let randomIndex = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[randomIndex];
+    }
+  </script> -->
+
+
+  <!-- -----------------------Third Project --------------------------- -->
+    <!-- <h2>Click To Change Image </h2>
+  <img id="myImage" src="WhatsApp Image 2025-09-02 at 14.18.39_dbb41c06.jpg" width="500" height="450">
+  <br>
+  <br>
+  <button onclick="changeImage()">Change Your Image</button>
+
+  <script>
+    let images = [
+      "tokyo-city-akihabara-anime-20209.jpg",
+      "WhatsApp Image 2025-09-02 at 14.18.39_dbb41c06.jpg"
+    ];
+    let currentIndex = 0;
+    function changeImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById("myImage").src = images[currentIndex];
+    }
+  </script> -->
+
+  <!-- ---------------------- Fourth Project ------------------------- -->
+    <h2>My Counter</h2>
+  <p>Number: <span id="count">0</span></p>
+  <button onclick="decrease()">-</button>
+  <button onclick="increase()">+</button>
+
+  <script>
+    let count = 0;
+    function increase() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+    function decrease() {
+      count--;
+      document.getElementById("count").innerText = count;
+    }
+  </script>
+</body>
+</html>
